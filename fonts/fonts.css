@@ -1,1 +1,24 @@
-/* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки */
+/* В этом файле вы импортируете все шрифты для сайта. Один из них вариативный и требует особенной настройки 
+Опишите в файле fonts/fonts.css подключение обоих шрифтов. 
+Подключая вариативный Inter, перечислите те веса шрифта, которые используются в макете, в виде диапазона.*/
+
+@font-face {
+  font-display: swap;
+  font-family: 'PressStart2P';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('PressStart2P-Regular'),
+    url('../fonts/PressStart2P-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Inter-Variable';
+  src:
+    local('Inter-Variable'),
+    url('../fonts/Inter-Variable.woff2') format('woff2 supports variations'),
+    url('../fonts/Inter-Variable.woff2') format('woff2-variations');
+  font-weight: 400 700;
+}
+
