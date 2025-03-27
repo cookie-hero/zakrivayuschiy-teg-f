@@ -2,7 +2,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: var(--main-weight-font);
+  font-variation-settings: 'wght' var(--main-weight-font);
   background-image: var(--background-gradient);
   background-size: cover;
   background-attachment: fixed;
@@ -59,6 +59,7 @@
 
 .cards__item-title {
   border-block-end: 2px solid var(--accent-color);
+  font-variation-settings: 'wght' var(--title-weight-font);
   font-size: 1.125em;
   display: block;
   padding: 3px 10px;
