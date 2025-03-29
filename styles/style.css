@@ -62,7 +62,7 @@
   font-variation-settings: "wght" var(--title-weight-font);
   font-size: 1.125em;
   display: block;
-  padding: 3px 10px;
+  padding: 5px 10px;
 }
 
 .card__item-picture {
@@ -137,9 +137,24 @@
 .cards__item-text {
   border-block-start: 2px solid var(--accent-color);
   font-size: 1.125em;
+  line-height: 1.167em;
   display: grid;
   gap: 27px;
   padding: 25px;
+}
+
+.cards__item-summary {
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+  width: 100px;
+}
+
+.cards__item-summary:focus {
+  outline: none;
+}
+
+.cards__item-summary:focus-visible {
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .cards__buttons {
@@ -175,6 +190,7 @@
   background-color: var(--main-color);
   cursor: pointer;
   position: relative;
+  transition: box-shadow 0.3s ease;
 }
 
 .card__like-button {
